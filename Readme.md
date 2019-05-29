@@ -1,2 +1,2 @@
 # Integrantes del grupo
-## <Knussel Agustin> <Eceiza Belen> <Levental German>
+## <Eceiza Belen> <Knussel Agustin> <Levental German>
