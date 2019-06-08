@@ -11,7 +11,8 @@ public class Insumo implements Comparable<Insumo>{
 	public double peso; //siempre en Kg
 	public boolean esRefrigerado;
 
-	//constructor
+	//constructores
+	//con peso, para insumos no loquidos
 	public Insumo(int id, String descripcion, UnidadDeMedida unidad, double costo, int stock, double peso, boolean esRefrigerado ) {
 		this.id = id;
 		this.descripcion = descripcion;
@@ -22,7 +23,7 @@ public class Insumo implements Comparable<Insumo>{
 		this.esRefrigerado = esRefrigerado;
 		
 	}
-	
+	//Sin peso: usado en Insumo liquido por "super(id, descripcion, unidad, costo, stock, esRefrigerado);"
 	public Insumo(int id, String descripcion, UnidadDeMedida unidad, double costo, int stock, boolean esRefrigerado ) {
 		this.id = id;
 		this.descripcion = descripcion;
