@@ -3,13 +3,59 @@ package isi.died.tp.dominio;
 public class Insumo implements Comparable<Insumo>{
 	
 	//Atributos
-	protected int id;
 	public String descripcion;
 	public UnidadDeMedida unidad_de_medida;
 	public double costo;
 	public int stock;
 	public double peso; //siempre en Kg
 	public boolean esRefrigerado;
+	
+	//Geters and Setters
+	protected int id;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	public UnidadDeMedida getUnidad_de_medida() {
+		return unidad_de_medida;
+	}
+	public void setUnidad_de_medida(UnidadDeMedida unidad_de_medida) {
+		this.unidad_de_medida = unidad_de_medida;
+	}
+	public double getCosto() {
+		return costo;
+	}
+	public void setCosto(double costo) {
+		this.costo = costo;
+	}
+	public int getStock() {
+		return stock;
+	}
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+	public double getPeso() {
+		return peso;
+	}
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+	public boolean isEsRefrigerado() {
+		return esRefrigerado;
+	}
+	public void setEsRefrigerado(boolean esRefrigerado) {
+		this.esRefrigerado = esRefrigerado;
+	}
+
+	
 
 	//constructores
 	//con peso, para insumos no loquidos
@@ -44,9 +90,7 @@ public class Insumo implements Comparable<Insumo>{
 		return String.valueOf(this.stock);
 	}
 	
-	public int getStock() {
-		return this.stock;
-	}
+	
 	
 	
 }
