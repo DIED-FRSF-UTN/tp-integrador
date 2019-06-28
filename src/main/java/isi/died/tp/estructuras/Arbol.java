@@ -1,5 +1,5 @@
 package isi.died.tp.estructuras;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Arbol<E extends Comparable<E>> {
@@ -34,6 +34,17 @@ public abstract class Arbol<E extends Comparable<E>> {
 	public abstract boolean esCompleto();
 
 	public abstract boolean esLleno();
+	
+	public abstract ArrayList<E> rangoAux(int inicio,int fin,ArrayList<E> lista);
 
+	
+	//metodo para poder imprimir el arbol en tareas de testing 
+		public String valorString() {
+			if(this.valor == null){
+				return "-";
+			}else {
+				return String.valueOf(this.valor);
+			}
+		}
 	
 }
